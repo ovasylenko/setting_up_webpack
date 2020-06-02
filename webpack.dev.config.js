@@ -23,6 +23,12 @@ const config = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.(js|jsx)$/,
+        loaders: ['eslint-loader'],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(js|jsx)$/,
         loaders: ['babel-loader'],
         exclude: /node_modules/,
@@ -45,7 +51,7 @@ const config = {
   },
   plugins: [
     new MiniCSSExtractPlugin({
-      filename: 'css/main.css'
+      filename: 'css/main.css',
     }),
     new CopyWebpackPlugin({
       patterns: [
