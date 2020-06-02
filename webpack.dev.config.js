@@ -7,6 +7,15 @@ const config = {
     filename: 'js/[name].bundle.js',
     path: resolve(__dirname, 'dist'),
     publicPath: '/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        loaders: ['babel-loader'],
+        exclude: /node_modules/
+      }
+    ]
   }
 }
 
