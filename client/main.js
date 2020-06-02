@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './main.scss'
 
 const Home = () => {
-  return <div>123</div>
-  
+  return <div>12345678</div>
+
 }
 
 const target = document.getElementById('root')
