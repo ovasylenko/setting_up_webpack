@@ -1,0 +1,12 @@
+{
+  "name": "setting_up_webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ovasylenko/setting_up_webpack.git",
+  "author": "Oleksii <lxvsnk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
