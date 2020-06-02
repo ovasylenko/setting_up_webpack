@@ -1,8 +1,9 @@
 import React from 'react'
-import ReactDOM from 'rya
+import ReactDOM from 'react-dom'
 
 const Home = () => {
   return <div>123</div>
+  
 }
 
 const target = document.getElementById('root')
