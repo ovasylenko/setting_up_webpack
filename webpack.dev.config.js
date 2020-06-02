@@ -8,6 +8,17 @@ const config = {
     path: resolve(__dirname, 'dist'),
     publicPath: '/'
   },
+  devServer: {
+    hot: true,
+    contentBase: resolve(__dirname, 'dist'),
+    port: 8080,
+    host: 'localhost',
+    index: 'index.html',
+    overlay: {
+      warning: false,
+      errors: true
+    }
+  },
   module: {
     rules: [
       {
