@@ -1,5 +1,5 @@
 const {resolve} = require('path')
-
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const config = {
   entry: './client/main.js',
   mode: 'development',
@@ -16,7 +16,17 @@ const config = {
         exclude: /node_modules/
       }
     ]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: `${__dirname}/client/index.html`,
+          to: 'index.html'
+        }
+      ]
+    })
+  ]
 }
 
 module.exports = config
