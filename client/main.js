@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'rya
 
 const Home = () => {
   return <div>123</div>
